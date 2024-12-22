@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+color: #fff;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+.page1{
+    background-image: url(/images/LandingBg.jpeg);
+   
+    padding: 45px 50px;
+}
+.half1{
+    width: 50%;
+}
+.page1 h1{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.page1 h3{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.page1 h4{
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+.page1 p{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 40px ;
+    /* text-align: center; */
+}
+#footer{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(to left bottom , #1a06ce, #eb081b);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10vw;
+    position: relative;
+    padding: 0 100px;
+
+  }
+  #footer > img{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+
+  }
+  #f1 a > img{
+
+    height: 100px;
+
+  }
+  #f1,
+  #f2,
+  #f3,
+  #f4
+  {
+    margin-left: 0vw;
+    width: fit-content;
+    position: relative;
+    z-index: 99;
+  }
+  #f2 h3 {
+    /* text-align: center; */
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  #f2 a{
+    text-decoration: none;
+  }
+  #f3 h3 {
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  #f3 a{
+    text-decoration: none;
+  }
+
+  #f4 i{
+    font-size: 40px;
+    margin-left: 25px;
+  }
+  #f4 a{
+    text-decoration: none;
+  }
+  #f4{
+    margin-left: 0vw;
+    gap: 1px;
+    display: flex;
+    flex-direction: row;
+  }

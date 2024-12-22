@@ -1,0 +1,565 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat';
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  background: #95c11e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+
+  border-radius: 50px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#nav {
+
+  height: 76px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 110px;
+  gap: 50px;
+  justify-content: flex-start;
+
+  position: fixed;
+  z-index: 999;
+
+
+}
+
+#nav-text {
+
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 700px;
+  gap: 60px;
+  justify-content: flex-start;
+
+  position: fixed;
+  z-index: 99;
+  color: white;
+}
+
+#nav-text a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#nav-text button {
+
+  padding: 5px 15px;
+
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  background: linear-gradient(to left bottom, #3e12e0, #e0223b);
+  border-color: azure;
+  z-index: 10;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+
+#nav-text .login-signup-popup:hover {
+  background: transparent;
+  color: white;
+
+}
+
+#nav img {
+  height: 65px;
+  position: relative;
+}
+
+#nav h4 {
+  text-transform: uppercase;
+  font-weight: 300px;
+  cursor: pointer;
+  font-size: 1.15vw;
+}
+
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
+}
+
+#main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.39);
+
+
+}
+
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+
+}
+
+#page1 #arrow {
+  height: 150px;
+  width: 150px;
+  background-color: transparent;
+  border: 2px solid #95c11e;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+}
+
+#page1 #arrow i {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+#page1 #arrow:hover {
+  scale: 0.4;
+  background-color: #95c11e;
+}
+
+#page1 h1 {
+  font-size: 85px;
+  font-weight: 600;
+  position: relative;
+}
+
+#page1 h1::before {
+  content: "The world’s most powerful AI";
+  position: absolute;
+  color: #000;
+  top: -2px;
+  left: -2px;
+  -webkit-text-stroke: 2px #191a19;
+  z-index: -1;
+
+
+
+}
+
+#page1 h3 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#page1 h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#page2 {
+  height: 100vh;
+  min-width: 100%;
+  z-index: 99;
+}
+
+
+#aiinfo {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+
+
+}
+
+#aiinfo>p {
+  font-size: 35px;
+  font-weight: 700;
+  width: 60%;
+  line-height: 45px;
+  text-align: center;
+}
+
+#aiinfo img {
+  position: absolute;
+  height: 60px;
+}
+
+#aiinfo #colon1 {
+  left: 13%;
+  top: 15%;
+
+}
+
+#aiinfo #colon2 {
+  bottom: 20%;
+  right: 13%;
+}
+
+#page3 {
+  width: 100vw;
+  height: 100vh;
+  background: url(./images/Aboutus.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+
+
+}
+
+#page3 h1 {
+  padding-top: 150px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+
+  font-size: 80px;
+  font-weight: 800;
+}
+
+#page3 h3 {
+  margin-left: 70px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#page3 h4 {
+  margin-top: 10px;
+  padding-left: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 45px;
+
+}
+
+#about {
+  text-align: center;
+  height: 100vh;
+  width: 40%;
+
+}
+
+#page3 button {
+  cursor: pointer;
+  margin: 90px 65px;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  background: linear-gradient(to left bottom, #3e12e0, #e0223b);
+  border-color: azure;
+  z-index: 10;
+
+}
+
+#card-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  height: 60%;
+  width: 35%;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all ease 0.6s;
+}
+
+.link {
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+#card1 {
+  background-image: url(./images/chatgpt.jpg);
+}
+
+#card2 {
+  background-image: url(./images/dallecanva.png);
+  background-position: left;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(15, 15, 247, 0.932);
+
+  padding: 16px;
+  padding-top: 40px;
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+
+.overlay h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.overlay p {
+  line-height: 40px;
+  font-size: 18px;
+  color: #f3efef;
+}
+
+.card:hover .overlay {
+  background-size: cover;
+  opacity: 1;
+}
+
+.card:hover {
+  transform: rotate3d(-1, 1, 0, 18deg);
+}
+
+#green-div {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left bottom, #3e12e0, #e0223b);
+
+
+}
+
+#green-div h4 {
+  width: 45%;
+  line-height: 50px;
+  color: #000;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+
+#green-div h1 {
+  width: 45%;
+  line-height: 50px;
+  color: #000;
+  text-align: center;
+  font-weight: 800;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+#page4 {
+  width: 100%;
+  height: 50vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+  position: relative;
+
+}
+
+.elem {
+  height: 62%;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+
+}
+.chatcard2{
+  height: 62%;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+
+}
+.elem h3 {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to left bottom, #3e12e0, #e0223b);
+
+  display: flex;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  font-weight: 800;
+  transition: all ease 0.5s;
+  position: absolute;
+  z-index: 10;
+
+}
+.chatcard2 h3{
+  height: 100%;
+  width: 100%;
+ 
+  display: flex;
+  color: transparent;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  font-weight: 800;
+  transition: all ease 0.5s;
+  position: absolute;
+  z-index: 10;
+}
+.elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.7s;
+
+  scale: 1.1;
+}
+.chatcard2 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+.elem:hover h3 {
+  color: aliceblue;
+  background: transparent;
+}
+
+.elem:hover img {
+  scale: 1;
+}
+
+#page4 h1 {
+  font-size: 6.4vw;
+  position: absolute;
+  top: -15%;
+  font-weight: 900;
+  font-family: gilroy;
+  color: #000;
+  -webkit-text-stroke: 2px #fff;
+}
+
+#footer {
+  width: 100%;
+  height: 30vh;
+  background: linear-gradient(to left bottom, #1a06ce, #eb081b);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10vw;
+  position: relative;
+  padding: 0 100px;
+
+}
+
+#footer>img {
+  position: absolute;
+  left: 0;
+  height: 98%;
+  z-index: 0;
+
+}
+
+#f1 a>img {
+
+  height: 80px;
+
+}
+
+#f1,
+#f2,
+#f3,
+#f4 {
+  margin-left: 0vw;
+  width: fit-content;
+  position: relative;
+  z-index: 99;
+}
+
+#f2 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 900;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#f2 a {
+  text-decoration: none;
+}
+
+#f3 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#f3 a {
+  text-decoration: none;
+}
+
+#f4 i {
+  font-size: 40px;
+  margin-left: 25px;
+}
+
+#f4 a {
+  text-decoration: none;
+}
+
+#f4 {
+  margin-left: 0vw;
+  gap: 1px;
+  display: flex;
+  flex-direction: row;
+}
