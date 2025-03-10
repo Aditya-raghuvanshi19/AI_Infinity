@@ -2,7 +2,7 @@ const generateForm = document.querySelector(".generate-form");
 const generateBtn = generateForm.querySelector(".generate-btn");
 const imageGallery = document.querySelector(".image-gallery");
 
-const HF_API_KEY = "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"; // Add your Hugging Face API key
+const HF_API_KEY = ""; 
 const API_URL = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell";
 
 let isImageGenerating = false;
@@ -12,7 +12,7 @@ const generateImage = async (prompt) => {
         const response = await fetch(API_URL, {
             method: "POST",
             headers: {
-                "Authorization": `Bearer ${HF_API_KEY}`,
+                
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({ inputs: prompt }),
