@@ -14,9 +14,9 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background: url("images/bg.jpg");
+  background: url("images/Jellyfish.webp");
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .image-generator::before {
@@ -107,7 +107,9 @@
   background: #1d1de2;
 }
 
+
 .image-gallery {
+ 
   display: flex;
   gap: 15px;
   padding: 0 15px;
@@ -122,7 +124,8 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  background: #f2f2f2;
+
+  
   border-radius: 4px;
   overflow: hidden;
   aspect-ratio: 1 / 1;
@@ -221,4 +224,10 @@
   .image-gallery .img-card {
     width: 100%;
   }
+}
+.prompt__disclaim{
+  text-align: center;
+  color: var(--placeholder-color);
+  font-size: 0.85rem;
+  margin-top: 1rem;
 }
