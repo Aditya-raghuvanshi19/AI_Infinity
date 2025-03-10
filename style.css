@@ -315,11 +315,11 @@ video {
 }
 
 #card1 {
-  background-image: url(./images/chatgpt.jpg);
+  background-image: url(./images/chat.jpg);
 }
 
 #card2 {
-  background-image: url(./images/dallecanva.png);
+  background-image: url(./images/art.jpg);
   background-position: left;
 }
 
